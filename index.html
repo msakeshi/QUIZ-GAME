@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="Quiz-game-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-page" id="start-page">
+            <h1>Welcome to the Quiz Game</h1>
+
+            <form id="start-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Enter your name"  required>
+                </div>
+                <button type="button" id="start-button" class="btn">Start Game</button>
+            </form>
+        </div>
+        
+        <div class="quiz-container" id="quiz-container">
+            <h1>Quiz</h1>
+            <div id="question-container">
+                <p id="question">Question goes here</p>
+                <ul id="options">
+                    <!-- Options will be added dynamically using JavaScript -->
+                </ul>
+            </div>
+            <button id="next-button" class="btn">Next</button>
+        </div>
+        
+        <div class="end-page" id="end-page">
+            <h1>Quiz Results</h1>
+            <p id="player-name">Name: </p>
+            <p id="player-score">Score: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
